@@ -1,40 +1,302 @@
 <!DOCTYPE html>
+<!-- * Isabella * -->
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title> CSS Box Model </title>
-    <style> 
+    <meta charset="utf-8">
+    <title>Coffee Connection</title>
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <style>
+        html, body {
+           min-height: 100%; 
+            overflow: auto
+        }
 
-    h1, h2 {
-         
-        text-align: center;
+        '**[cite: 10].
+        /* Starting Styles */
+
+        #banner {
+       position: fixed;
+         top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: rgb(33, 16, 11);
+        color: black;
+
+}
+
+figure {
+    margin-top: 150px;
+}
+        body {
+            font-size: 100%;
+            font-family: arial, sans-serif;
+            background: rgb(234, 214, 159);
+        }
+
+        .center {
+            text-align: center;
+        }
+
+    
+        
+
+        header h1 {
+            font-size: 3em;
+            color: black;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+            font-family: Pacifico;
+            text-shadow: 0px 6px 3px #846843;
+        }
+
+        nav a {
+            color: white;
+            
+        }
+
+            nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+            }
+        
+           nav li {
+            float: left;
+            margin-right: 1.5em;
+
+            nav a {
+                text-decoration: none;
+            }
+           
+            
+        }
+        
+           nav a {
+            font-size: 1em;
+            color: rgb(243, 255, 188);
+            text-transform: uppercase;
+        }
+
+        figure {
+            margin-right: auto;
+            margin-left: auto;
+            width: 960px;
+            background: rgb(243, 255, 188);
+            text-align: center;
+        }
+
+        #content {
+            margin-left: auto;
+            margin-right: auto;
+            width: 960px;
+            background: rgb(243, 255, 188);
+            padding: 5px;
+        }
+
+        .product {
+            width: 300px;
+            background: rgb(234, 214, 159);
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 50px;
+            padding: 5px;
+            outline: 2px dashed rgb(234, 214, 159);
+        }
+
+        h2 {
+            font-size: 2em;
+            font-family: Pacifico;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        main {
+            padding-bottom: 20px;
+        }
+
+        form {
+            width: 320px;
+            margin: 20px auto;
+        }
+
+        button {
+            display: inline-block;
+            margin: 0px 0px 0px 10px;
+        }
+
+        form div {
+            padding: 5px;
+        }
+
+        #contact p {
+            margin: 10px;
+        }
+
+        footer {
+            background: rgb(33, 16, 11);
+            color: rgb(243, 255, 188);
+            font-size: 0.8em;
+            margin-top: 50px;
+            padding: 10px;
+        }
+
+        address p {
+            margin: 0;
+        }
+
+        /* Isabella Nikolopoulos Styles */
+    
+    nav ul {
+     list-style-type: none;   
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+
     }
 
-    section {
-       width: 450px;
-       margin: 25px auto;
-       padding: 20px;
-       border: 2px solid black;
-      
-    }
-   </style> 
+    nav li {
+        float: left;
+        margin-right: 1.5em;
+        }
+      .product { 
+          position: relative;
+          float: left;
+          width: 31%;
+          margin: 1%;
+          box-sizing: border-box;
+       }
+     .product img {
+    display: block;
+    width: 100%;
+     }
+
+        .product p:last-of-type {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background-color: rgba(33, 16, 11, 0.7);
+      color: white;
+     }
+
+             figure {
+    margin-top: 150px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+</style>
+
 </head>
+
+<body>
+    <div id="banner">
+     <header class="center">
+        <h1>Coffee Connection</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <figure class="center">
+        <img src="images/people.png" alt="people drinking coffee">
+    </figure>
+    <main id="content">
+        <h2 class="center">Welcome to Coffee Connection!</h2>
+        <blockquote>We’re not just passionate lovers of coffee, but everything else
+            that goes with a full and rewarding coffeehouse experience. We also offer
+            a selection of premium teas, fine pastries and other delectable treats.
+            And the music you hear in store is chosen for its artistry and appeal.
+            <br>
+            <br>
+            It’s not unusual to see people coming to Coffee Connection to chat, meet
+            up or even work. We’re a neighborhood gathering place, a part of the
+            daily routine, and would like to be part of your way of life.
+        </blockquote>
+        <section id="products">
+            <div class="product center">
+                <h3>Espresso</h3>
+                <p><img src="images/coffee_espresso.jpg" alt="expresso coffee"></p>
+                <p>Popular espresso beverages</p>
+            </div>
+            <div class="product center">
+                <h3>Blended</h3>
+                <p><img src="images/coffee_blended.jpg" alt="blended coffee drinks">
+                </p>
+                <p>Delicious icy blends</p>
+            </div>
+            <div class="product center">
+                <h3>Pastries</h3>
+                <p><img src="images/coffee_pastries.jpg" alt="pastries"></p>
+                <p>Muffins, bagels, coffee cakes, and more</p>
+            </div>
+            <div class="product center">
+                <h3>Food</h3>
+                <p><img src="images/coffee_food.jpg" alt="anytime food"></p>
+                <p>Sandwiches, paninis, salads and more</p>
+            </div>
+            <div class="product center">
+                <h3>Breakfast</h3>
+                <p><img src="images/coffee_breakfast.jpg" alt="breakfast food"></p>
+                <p>Biscuits, muffins, wraps, croissants, oatmeal and more</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="center">Sign up to Receive Our Newsletter</h2>
+            <p>A cup of coffee in the morning may provide more than just an energy
+                boost. Health benefits, say some researchers, may range from helping
+                prevent diabetes to lowering the risk of liver disease. With over 400
+                billion cups of coffee thought to be consumed every year, coffee is
+                one of the world's most popular drinks. However, drinking too much
+                coffee can result in some very unpleasant adverse effects. According
+                to a study by researchers at the University of Oklahoma, caffeine can
+                cause anxiety symptoms in normal individuals, especially in
+                vulnerable patients, like those with pre-existing anxiety disorders.
+            </p>
+            <form action="#" method="post">
+                <div>
+                    <label for="fname">First Name:</label> <input type="text"
+                        name="fname" id="fname" required>
+                </div>
+                <div>
+                    <label for="lname">Last Name:</label> <input type="text"
+                        name="lname" id="lname" required>
+                </div>
+                <div>
+                    <label for="email">Your Email:</label> <input type="email"
+                        name="email" id="email" required>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="center">
+        <address>
+            <p>PO Box 1234<br>
+                San Diego, CA 92100<br>
+                info@CoffeeConnection.com
+            </p>
+        </address>
+    </footer>
 </body>
 
-
-<header>
-    <h1>CSS Box Model Demonstration</h1>
-</header>
-
-<section>
-  <h2> This is box 1</h2>
-  <h2> There is content here.</h2>
-</section>
-
-<section>
-<h2> This is box 2</h2>
-<p> There is content here as well.</p>
-</section>
-
-</body>
 </html>
